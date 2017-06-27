@@ -1,5 +1,7 @@
 # PasswordManager
 
 To run app type:
+```
+npm start
 
-`npm start'
+```

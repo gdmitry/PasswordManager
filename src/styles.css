@@ -1,0 +1,25 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+  margin-bottom: 30px;
+}
+
+h2,
+h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.app {
+  margin: 2em;
+}
+
+.credentials-form {
+  width: 300px;
+}
+
+.app .form-control[readonly] {
+  background: #fff;
+}

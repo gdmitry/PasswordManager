@@ -1,0 +1,12 @@
+<button class="add-button btn btn-primary" routerLink="/register">Add/Register</button>
+<button class="logout-button btn btn-primary" (click)="logout()">Logout</button>
+<h2>{{title}}</h2>
+<ul class="list-group all-credentials">
+  <li *ngFor="let user of users" class="list-group-item credential-item" (click) = "revealPassword($event)">
+    <label>User Name</label>
+    <input type="text" class="form-control go-to-edit" value="{{user.name}}" [routerLink]="['/edit', user.name]" readonly>
+    <label>Password</label>
+    <input type="password" class="form-control password-hidden" value="{{user.password}}" readonly/>
+    <input type="text" class="form-control password-revealed" value="{{user.password}}" readonly/>
+  </li>
+</ul>

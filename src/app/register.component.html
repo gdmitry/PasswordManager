@@ -1,0 +1,15 @@
+<h2>{{title}}</h2>
+<form class="credentials-form">
+  <div class="form-group">
+    <label for="nameInput">User Name</label>
+    <input type="text" class="form-control" id="nameInput" name="name" placeholder="Enter user name" [(ngModel)]="user.name"
+      required>
+  </div>
+  <div class="form-group">
+    <label for="passwordInput">Password</label>
+    <input #name="ngModel" type="password" class="form-control" id="passwordInput" name="password" placeholder="Password" [(ngModel)]="user.password"
+      required>
+  </div>
+  <input type="button" class="btn btn-link" (click)="goBack()" value="Back" />
+  <input type="submit" class="register-button btn btn-primary" value="Register" (click)="registerUser(user)" />
+</form>

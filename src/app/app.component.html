@@ -1,0 +1,7 @@
+<div class="app">
+  <h1>{{title}}</h1>
+  <div  *ngIf="authService.isLoggedIn" class="alert alert-success">
+    You logged in as {{authService.authUser.name}}
+  </div>
+  <router-outlet></router-outlet>
+</div>

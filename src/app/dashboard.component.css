@@ -1,0 +1,33 @@
+.credential-item:hover {
+    background: rgb(221, 221, 221);
+    border-color: rgb(221, 221, 221);
+}
+
+.credentials {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.credentials .delete-button {
+    display: inline-block;
+}
+
+.go-to-edit {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.all-credentials {
+    display: inline-block;
+}
+
+.password-hidden,
+.credential-item.selected .password-revealed {
+    display: block;
+}
+
+.password-revealed,
+.credential-item.selected .password-hidden {
+    display: none;
+}
